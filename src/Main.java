@@ -1,5 +1,6 @@
 import RandomRecources.RandomNumberListGenerator;
-import SortingAlgorithms.BubbleSort;
+import RandomRecources.SortedVerifier;
+import SortingAlgorithms.SelectionSort;
 
 import java.util.Arrays;
 
@@ -17,17 +18,18 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        int [] numArray = RandomNumberListGenerator.generateArray(1, 10, 10);
+        int [] numArray = RandomNumberListGenerator.generateArray(1, 50, 150);
         int [] increasingArray;
         int [] decreasingArray;
         increasingArray = numArray.clone();
         decreasingArray = numArray.clone();
 
-        BubbleSort.sortIncreasing(increasingArray);
-        BubbleSort.sortDecreasing(decreasingArray);
+        SelectionSort.sort(increasingArray);
+        //SelectionSort.sort(decreasingArray);
+        System.out.println(SortedVerifier.sortedCorrectly(true, increasingArray));
 
         System.out.println(Arrays.toString(numArray));
         System.out.println(Arrays.toString(increasingArray));
-        System.out.println(Arrays.toString(decreasingArray));
+        //System.out.println(Arrays.toString(decreasingArray));
     }
 }
