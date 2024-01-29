@@ -1,5 +1,6 @@
 import RandomRecources.RandomNumberListGenerator;
 import RandomRecources.SortedVerifier;
+import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.SelectionSort;
 
 import java.util.Arrays;
@@ -24,8 +25,7 @@ public class Main {
         increasingArray = numArray.clone();
         decreasingArray = numArray.clone();
 
-        SelectionSort.sort(increasingArray);
-        //SelectionSort.sort(decreasingArray);
+        InsertionSort.sort(increasingArray);
         System.out.println(SortedVerifier.sortedCorrectly(true, increasingArray));
 
         System.out.println(Arrays.toString(numArray));
