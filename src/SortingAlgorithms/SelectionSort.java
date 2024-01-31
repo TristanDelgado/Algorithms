@@ -1,9 +1,19 @@
 package SortingAlgorithms;
 
 public class SelectionSort {
+    /*
 
-    //input: integer nums array
-    //sorts from smallest to largest
+    Time Complexity:
+    Average case: Theta(n^2)
+    Best case:    Omega(n^2)
+    Worst case:   O(n^2)
+
+    Space Complexity:
+
+    Notes:
+    sorts from smallest to largest
+
+     */
     public static void sort(int [] nums)
     {
         int min;

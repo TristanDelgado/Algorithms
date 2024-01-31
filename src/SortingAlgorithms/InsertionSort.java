@@ -1,10 +1,21 @@
 package SortingAlgorithms;
 
 public class InsertionSort {
+    /*
 
-    //sorts from smallest to largest
-    //input: integer array
-    //Not sure if most efficient, but it works
+    Time Complexity:
+    Average Case: Theta(n^2)
+    Best Case: Omega(n)
+    Worst Case: O(n^2)
+
+    Space Complexity:
+    N/A
+
+    Notes:
+    Not sure if most efficient, but it works
+    Sorts from smallest to largest
+
+     */
     public static void sort(int [] nums)
     {
         int indexOfCorrectPlace;

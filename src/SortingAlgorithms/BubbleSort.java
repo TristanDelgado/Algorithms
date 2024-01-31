@@ -1,8 +1,19 @@
 package SortingAlgorithms;
 
 public class BubbleSort {
+    /*
 
-    //Only with Integers arrays
+    Time Complexity:
+    Best Case: Omega(n)
+    Worst Case: O(n^2)
+
+    Space Complexity:
+    N/A
+
+    Notes:
+    N/A
+
+     */
     static public void sortIncreasing(int [] nums)
     {
         boolean sorted = false;
@@ -22,7 +33,6 @@ public class BubbleSort {
             }
         }
     }
-    //Only with integer arrays
     static public void sortDecreasing(int [] nums)
     {
         boolean sorted = false;
