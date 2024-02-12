@@ -4,6 +4,8 @@ import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
 import SortingAlgorithms.QuickSort;
 import SortingAlgorithms.SelectionSort;
+import dpPractice.CoinProblem;
+import dpPractice.FibonacciSolutions;
 
 import java.util.Arrays;
 
@@ -20,19 +22,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
-        int [] numArray = RandomNumberListGenerator.generateArray(1, 50, 150);
-        int [] increasingArray;
-        int [] decreasingArray;
-        increasingArray = numArray.clone();
-        decreasingArray = new int[]{1, 1, 3, 3, 2};
-
-        QuickSort.sort(increasingArray);
-        System.out.println(SortedVerifier.sortedCorrectly(true, increasingArray));
-
-        //System.out.println(Arrays.toString(numArray));
-        //System.out.println(Arrays.toString(decreasingArray));
-        System.out.println(Arrays.toString(increasingArray));
-
+        int [] coins = {1, 4, 5};
+        System.out.println(CoinProblem.minimum_coins_rec(13, coins));
     }
+
+
 }
