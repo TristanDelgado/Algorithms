@@ -23,7 +23,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int [] coins = {1, 4, 5};
-        System.out.println(CoinProblem.minimum_coins_rec(13, coins));
+        System.out.println(CoinProblem.minimum_coins_dpTab(150, coins));
     }
 
 
