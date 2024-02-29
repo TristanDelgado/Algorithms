@@ -1,12 +1,6 @@
 import RandomRecources.RandomNumberListGenerator;
 import RandomRecources.SortedVerifier;
-import SortingAlgorithms.InsertionSort;
-import SortingAlgorithms.MergeSort;
-import SortingAlgorithms.QuickSort;
-import SortingAlgorithms.SelectionSort;
-import dpPractice.CoinProblem;
-import dpPractice.FibonacciSolutions;
-
+import SortingAlgorithms.*;
 import java.util.Arrays;
 
 /* todo
@@ -22,9 +16,9 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int [] coins = {1, 4, 5};
-        System.out.println(CoinProblem.minimum_coins_dpTab(150, coins));
+        int [] nums = RandomNumberListGenerator.generateArray(0, 100, 200);
+        nums = CountingSort.sort(nums, 0, 100);
+        System.out.println(SortedVerifier.sortedCorrectly(true, nums));
+        System.out.println(Arrays.toString(nums));
     }
-
-
 }
